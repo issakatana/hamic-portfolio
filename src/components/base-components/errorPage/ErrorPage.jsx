@@ -5,8 +5,8 @@ import './errorPage-styles.css';
 
 export default function ErrorPage() {
     return (
-        <section className="ErrorPage">
-            <h1>404</h1>
+        <section className="ErrorPage Pages">
+            <h1>Error - 404</h1>
             <p>Page Not Found</p>
             <Link to='/'>Back Home</Link>
         </section>

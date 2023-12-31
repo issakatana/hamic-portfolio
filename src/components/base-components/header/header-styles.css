@@ -1,0 +1,121 @@
+.main__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-color: var(--fc-general); */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+.main__header.scrolled {
+    background-color: #000; 
+}
+.main__header a {
+   text-decoration: none !important;
+   color: var(--fc-general);
+   letter-spacing: 1px;
+}
+.site-text-logo {
+    position: relative;
+    font-size: 1.5rem;
+    color: var(--fc-headings);
+    cursor: pointer;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    font-weight: bold;
+}
+.mn {
+    color: var(--fc-sub-headings);
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+.header__nav a {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left:2rem;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+}
+.header__nav a:hover {
+    color: var(--fc-headings);
+}
+.site-text-logo.active {
+    text-decoration: underline;
+    color: var(--fc-headings);
+}
+.nav-link {
+    position: relative;
+}
+.nav-link.active {
+    text-decoration: underline;
+    color: var(--fc-headings);
+}
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    top: 70%;
+    left: 20%;
+    transform: translateX(-50%);
+    background-color: red; 
+}
+.mobile-logo-icon {
+    display: none;
+}
+.mobile-logo-icon img {
+    height: 38px;
+}
+.white-icon {
+    filter: brightness(0) invert(1);
+}
+.red-icon {
+    filter: brightness(0) invert(1);
+}
+
+
+/* Styles for big screens */
+@media screen and (min-width:1920px) {
+    .main__header {
+        padding: 1vw 20vw;
+    }
+}
+
+
+/* Styles for mobile screens */
+@media screen and (max-width: 768px) {
+    .main__header {
+        z-index: 2000;
+    }
+    .header__nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-flow: column wrap;
+        position: fixed;
+        top: 48px;
+        right: -300px;
+        width: 200px;
+        height: 100vh;
+        padding-bottom: 15vw;
+        background-color: #2a3239;
+        transition: 0.7s ease-in-out;
+    }
+    .header__nav a {
+        color: var(--fc-general);
+    }
+    .mobile-logo-icon {
+        display: block;
+    }
+    .nav-link.active::after {
+        top: 100%;
+    }
+}
+  
+
+
+

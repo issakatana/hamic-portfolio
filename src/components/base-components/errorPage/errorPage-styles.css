@@ -1,0 +1,15 @@
+.ErrorPage {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    gap: 30px;
+}
+.ErrorPage h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.ErrorPage p ,
+.ErrorPage a {
+    font-size: 2rem;
+}

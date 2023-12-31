@@ -36,3 +36,53 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* || MEDIA QUERRIES */
+/* Mobile (Portrait) */
+@media screen and (max-width: 480px) {
+  .background-container {
+    background-image: url('assets/images/level1bg.png');
+  }
+}
+/* Mobile (Landscape) */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .background-container {
+    background-image: url('assets/images/level1bg.png');
+  }
+}
+/* Tablet (Portrait) */
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .background-container {
+    background-image: url('assets/images/logohamie.png');
+  }
+}
+/* Tablet (Landscape) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .background-container {
+    background-image: url('assets/images/bghamie.png');
+  }
+}
+/* Small Desktop */
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  .background-container {
+    background-image: url('assets/images/bgimages/yy.png');
+  }
+}
+
+/* Medium Desktop */
+@media screen and (min-width: 1440px) and (max-width: 1679px) {
+  .background-container {
+    background-image: url('assets/images/bghamie.png');
+  }
+}
+/* Large Desktop */
+@media screen and (min-width: 1680px) {
+  .background-container {
+    background-image: url('assets/images/bgimages/yy.png');
+  }
+}
+/* High-DPI (Retina) Displays */
+@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+}
